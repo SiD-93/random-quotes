@@ -14,7 +14,7 @@ function QuoteBox(props) {
       <a className='btn btn-default pull-left' href={tweetLink} type='submit'>
         <i className='fa fa-twitter'> Tweet</i>
       </a>
-      <button className='btn btn-default pull-right' type='submit'>New Quote</button>
+      <button className='btn btn-default pull-right' type='submit' onClick={props.onClick}>New Quote</button>
     </div>
   )
 }
