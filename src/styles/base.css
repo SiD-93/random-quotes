@@ -1,6 +1,11 @@
+body {
+  background-color: aliceblue;
+}
 .quoteBox {
+  background-color: white;
   border-radius: 3px;
-  background: white;
+  position: relative;
+  margin: 8% auto auto auto;
+  width: 450px;
   padding: 40px 50px;
-  margin: 10%;
 }
