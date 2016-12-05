@@ -3,8 +3,7 @@ import React from 'react';
 import '../styles/base.css';
 
 function QuoteBox(props) {
-  let tweetText = "'" + props.quote + "' - " + props.author;
-  let tweetLink = 'https://twitter.com/intent/tweet?text=' + tweetText;
+  let tweetLink = `https://twitter.com/intent/tweet?text='${props.quote}' - ${props.author}`;
   return (
     <div className='container-fluid quoteBox'>
       <blockquote className='blockquote'>
