@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+
 import QuoteBox from '../components/QuoteBox';
 
 class AppContainer extends Component{
@@ -14,11 +14,14 @@ class AppContainer extends Component{
 
   handleClick(e) {
     e.preventDefault();
-    axios.get('https://got-quotes.herokuapp.com/quotes')
+    fetch('https://got-quotes.herokuapp.com/quotes')
     .then((response) => {
-      this.setState({
-        quote: response.data.quote,
-        author: response.data.character
+      response.json()
+      .then((data) => {
+        this.setState({
+          quote: data.quote,
+          author: data.character
+        });
       });
     }).catch((error) => {
       console.log(error);
