@@ -5,7 +5,7 @@ import '../styles/base.css';
 function QuoteBox(props) {
   let tweetLink = `https://twitter.com/intent/tweet?text='${props.quote}' - ${props.author}`;
   return (
-    <div className='container-fluid quoteBox'>
+    <div className='container-fluid quoteBox fadeIn'>
       <blockquote className='blockquote'>
         <p className='mb-0'>{props.quote}</p>
         <footer className='blockquote-footer'>{props.author}</footer>
