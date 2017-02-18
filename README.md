@@ -1,6 +1,6 @@
 # Random Quote Machine
 
-A random quote machine for the FreeCodeCamp intermediate front end development projects. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+A [random quote machine](https://www.freecodecamp.com/challenges/build-a-random-quote-machine) for the FreeCodeCamp intermediate front end development projects. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Installation
 
